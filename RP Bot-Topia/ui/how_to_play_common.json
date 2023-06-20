@@ -3,7 +3,7 @@
 
   "dynamic_dialog_screen@common.base_screen": {
     "type": "screen",
-    "size": [ "100%", "100%" ],
+    "size": ["100%", "100%"],
     "button_mappings": [
       {
         "from_button_id": "button.menu_cancel",
@@ -33,7 +33,7 @@
 
   "button_panel@common_buttons.new_ui_binding_button_label": {
     "$anchor|default": "left_middle",
-    "offset": [ 10, 0 ]
+    "offset": [10, 0]
   },
 
   "light_text_button@common_buttons.light_text_button": {
@@ -43,7 +43,7 @@
   "action_button@how_to_play_common.light_text_button": {
     "$pressed_button_name|default": "unset_button_name",
     "$button_text|default": "unset $button_text",
-    "size": [ "100%", 30 ],
+    "size": ["100%", 30],
     "anchor_from": "left_middle",
     "anchor_to": "left_middle"
   },
@@ -52,16 +52,16 @@
     "type": "panel",
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "size": [ "100%", "16px" ],
+    "size": ["100%", "16px"],
     "controls": [
       {
         "category_text": {
           "type": "label",
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
-          "size": [ "default", "default" ],
-          "max_size": [ "100%", "100% - 4px" ],
-          "offset": [ "0px", "-3px" ],
+          "size": ["default", "default"],
+          "max_size": ["100%", "100% - 4px"],
+          "offset": ["0px", "-3px"],
           "text": "('howtoplay.category.' + $category)",
           "color": "$main_header_text_color"
         }
@@ -73,22 +73,22 @@
     "type": "panel",
     "layer": 2,
     "controls": [
-       {
-			"text_icon": {
-			"type": "image",
-			"anchor_from": "left_middle",
-			"anchor_to": "left_middle",
-			"texture": "('textures/ui_icon/icon_' + $section_topic)",
-			"size": [ "16px", "16px" ]
-	       }
-         },
+      {
+        "text_icon": {
+          "type": "image",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "texture": "('textures/ui_icon/icon_' + $section_topic)",
+          "size": ["16px", "16px"]
+        }
+      },
       {
         "tab_button_text": {
           "type": "label",
           "anchor_from": "left_middle",
           "anchor_to": "left_middle",
-          "size": [ "100% - 16px", "9px" ],
-          "offset": [ "20px", 0 ],
+          "size": ["100% - 16px", "9px"],
+          "offset": ["20px", 0],
           "text": "('howtoplay.' + $section_topic)",
           "layer": 3,
           "color": "$text_color",
@@ -102,13 +102,13 @@
     "type": "panel",
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "size": [ "100%", "30px" ],
+    "size": ["100%", "30px"],
     "controls": [
       {
         "section_toggle_button@common_toggles.light_ui_toggle": {
           "anchor_from": "top_left",
           "anchor_to": "top_left",
-          "size": [ "100%", "30px" ],
+          "size": ["100%", "30px"],
 
           "$button_type_panel": "how_to_play_common.toggle_button_control",
 
@@ -132,36 +132,36 @@
 
   "padding": {
     "type": "panel",
-    "size": [ "100%", "12px" ]
+    "size": ["100%", "12px"]
   },
 
   "large_padding@how_to_play_common.padding": {
     "type": "panel",
-    "size": [ "100%", "22px" ]
+    "size": ["100%", "22px"]
   },
 
   "section_contents_header": {
     "type": "input_panel",
     "focus_enabled": true,
-    "size": [ "100%", "6px" ]
+    "size": ["100%", "6px"]
   },
 
   "section_contents_footer": {
     "type": "input_panel",
     "focus_enabled": true,
-    "size": [ "100%", "24px" ]
+    "size": ["100%", "24px"]
   },
 
   "main_sections": {
     "type": "stack_panel",
-    "size": [ "100%", "100%c" ],
+    "size": ["100%", "100%c"],
     "anchor_from": "top_left",
     "anchor_to": "top_left"
   },
 
   "splitscreen_only_content": {
     "type": "stack_panel",
-    "size": [ "100%", "100%c" ],
+    "size": ["100%", "100%c"],
     "orientation": "vertical",
     "controls": "$content",
     "bindings": [
@@ -174,8 +174,8 @@
 
   "header_background": {
     "type": "image",
-    "size": [ "100%", "20px" ],
-    "offset": [ 0, "-2px" ],
+    "size": ["100%", "20px"],
+    "offset": [0, "-2px"],
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "texture": "textures/ui/Banners",
@@ -188,7 +188,7 @@
           "anchor_from": "center",
           "anchor_to": "center",
           "text_alignment": "center",
-          "max_size": [ "95%", 10 ],
+          "max_size": ["95%", 10],
           "text": "$text"
         }
       }
@@ -197,10 +197,8 @@
 
   "header": {
     "type": "panel",
-    "size": [ "100%", "28px" ],
-    "controls": [
-      { "header@how_to_play_common.header_background": { } }
-    ]
+    "size": ["100%", "28px"],
+    "controls": [{ "header@how_to_play_common.header_background": {} }]
   },
 
   "paragraph": {
@@ -208,7 +206,7 @@
     "color": "$body_text_color",
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
-    "size": [ "100%", "default" ],
+    "size": ["100%", "default"],
     "text": "$text"
   },
 
@@ -266,7 +264,7 @@
   "image": {
     "type": "image",
     "layer": 1,
-    "size": [ "100%", "128px" ],
+    "size": ["100%", "128px"],
     "anchor_from": "center",
     "anchor_to": "center"
   },
@@ -274,30 +272,32 @@
   "how_to_play_header": {
     "type": "panel",
     "controls": [
-    {
+      {
         "top_bar@how_to_play_common.top_bar": {
-          "size": [ "100%", "100%" ],
+          "size": ["100%", "100%"],
           "layer": 2,
           "controls": [
             {
               "back_button@common.back_title_button": {
                 "anchor_from": "left_middle",
                 "anchor_to": "left_middle",
-                "offset": [ 2, -1 ]
+                "offset": [2, -1]
               }
             },
             {
               "how_to_play_title@common.screen_header_title_panel": {
-                "size": [ "70% - 22px", "100%" ], // Gamepad helpers have max size of 30% and the back button is 20px
-                "offset": [ 20, -1 ],
+                "size": ["70% - 22px", "100%"], // Gamepad helpers have max size of 30% and the back button is 20px
+                "offset": [20, -1],
                 "anchor_from": "left_middle",
                 "anchor_to": "left_middle",
                 "$screen_header_title": "#section_title",
                 "$screen_header_title_binding_type": "global",
-                "layer": 2                
+                "layer": 2
               }
             },
-            { "gamepad_bumper_helpers@how_to_play_common.gamepad_bumper_helpers": {} }
+            {
+              "gamepad_bumper_helpers@how_to_play_common.gamepad_bumper_helpers": {}
+            }
           ]
         }
       }
@@ -309,7 +309,7 @@
     "controls": [
       {
         "header@how_to_play_common.how_to_play_header": {
-          "size": [ "100%", "23px" ],
+          "size": ["100%", "23px"],
           "anchor_from": "top_left",
           "anchor_to": "top_left"
         }
@@ -318,9 +318,7 @@
         "container": {
           "type": "panel",
           "size": "$store_screen_size",
-          "controls": [
-            { "$dialog_content@$dialog_content": { } }
-          ]
+          "controls": [{ "$dialog_content@$dialog_content": {} }]
         }
       }
     ]
@@ -331,26 +329,24 @@
     "anchor_from": "top_middle",
     "anchor_to": "top_middle",
     "controls": [
-      { "selector_area@how_to_play_common.selector_area": { } },
-      { "content_area@how_to_play_common.content_area_wrapper": { } },
-      { "section_divider@how_to_play_common.section_divider": { } }
+      { "selector_area@how_to_play_common.selector_area": {} },
+      { "content_area@how_to_play_common.content_area_wrapper": {} },
+      { "section_divider@how_to_play_common.section_divider": {} }
     ]
   },
 
   "scrollable_selector_area_content": {
     "type": "panel",
-    "offset": [ "6px", "2px" ],
-    "size": [ "100% - 8px", "100%c + 4px" ],
-    "controls": [
-      { "$selector_stack_panel@$selector_stack_panel": { } }
-    ]
+    "offset": ["6px", "2px"],
+    "size": ["100% - 8px", "100%c + 4px"],
+    "controls": [{ "$selector_stack_panel@$selector_stack_panel": {} }]
   },
 
   // left side
   "selector_area": {
     "type": "panel",
-    "offset": [ "-2px", "21px" ],
-    "size": [ "30% + 2px", "100% - 19px" ],
+    "offset": ["-2px", "21px"],
+    "size": ["30% + 2px", "100% - 19px"],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "layer": 3,
@@ -369,8 +365,8 @@
         "scrolling_panel@common.scrolling_panel": {
           "$scrolling_content": "how_to_play_common.scrollable_selector_area_content",
           "$show_background": false,
-          "$scroll_size": [ "5px", "100% - 4px" ],
-          "$scroll_bar_left_padding_size": [ 0, 0 ]
+          "$scroll_size": ["5px", "100% - 4px"],
+          "$scroll_bar_left_padding_size": [0, 0]
         }
       }
     ]
@@ -379,8 +375,8 @@
   // divider between two sides
   "section_divider": {
     "type": "image",
-    "offset": [ "30%", "20px" ],
-    "size": [ "4px", "100% - 18px" ],
+    "offset": ["30%", "20px"],
+    "size": ["4px", "100% - 18px"],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "layer": 3,
@@ -390,38 +386,36 @@
   // contains right side
   "content_area_wrapper": {
     "type": "panel",
-    "offset": [ "2px", "21px" ],
-    "size": [ "70% - 2px", "100% - 19px" ],
+    "offset": ["2px", "21px"],
+    "size": ["70% - 2px", "100% - 19px"],
     "anchor_from": "top_right",
     "anchor_to": "top_right",
     "layer": 1,
-    "controls": [
-      { "content_area@how_to_play_common.content_area": {} }
-    ]
+    "controls": [{ "content_area@how_to_play_common.content_area": {} }]
   },
 
   // right side
   "content_area": {
     "type": "panel",
-    "size": [ "100% - 6px", "100%" ],
+    "size": ["100% - 6px", "100%"],
     "anchor_from": "top_right",
     "anchor_to": "top_right",
     "controls": [
       {
         "control": {
           "type": "stack_panel",
-          "size": [ "100%", "100%" ],
+          "size": ["100%", "100%"],
           "anchor_from": "top_right",
           "anchor_to": "top_right",
           "controls": [
             {
               "scrolling_panel@common.scrolling_panel": {
-                "size": [ "100%", "fill" ],
+                "size": ["100%", "fill"],
                 "$scrolling_content": "$section_content_panels",
                 "$show_background": false,
-                "$scroll_size": [ "5px", "100% - 4px" ],
-                "$scroll_bar_left_padding_size": [ 5, 0 ],
-                "$scroll_bar_right_padding_size": [ 5, 0 ]
+                "$scroll_size": ["5px", "100% - 4px"],
+                "$scroll_bar_left_padding_size": [5, 0],
+                "$scroll_bar_right_padding_size": [5, 0]
               }
             }
           ]
@@ -435,7 +429,7 @@
   },
 
   "gamepad_bumper_helper_description@common.gamepad_helper_icon_description": {
-    "max_size": [ "54px", "10px" ]
+    "max_size": ["54px", "10px"]
   },
 
   // gamepad helpers
@@ -444,8 +438,8 @@
     "orientation": "horizontal",
     "anchor_from": "right_middle",
     "anchor_to": "right_middle",
-    "offset": [ "-4px", "-2px" ],
-    "max_size": [ "30%", "26px" ],
+    "offset": ["-4px", "-2px"],
+    "max_size": ["30%", "26px"],
     "layer": 6,
     "controls": [
       {
@@ -456,7 +450,7 @@
       {
         "padding": {
           "type": "panel",
-          "size": [ "4px", "100%" ]
+          "size": ["4px", "100%"]
         }
       },
       {
@@ -466,5 +460,4 @@
       }
     ]
   }
-
 }
